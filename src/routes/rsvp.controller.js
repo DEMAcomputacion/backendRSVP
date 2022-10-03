@@ -2,7 +2,7 @@ import RSVP from './rsvp.js'
 
 export const getRsvps = async (req, res) => {
     try {
-        const rsvps = await RSVP.find().sort({updatedAt: 1});
+        const rsvps = await RSVP.find().sort({updatedAt: -1});
         return res.json(rsvps)
     }catch(error){
         console.log(error)
