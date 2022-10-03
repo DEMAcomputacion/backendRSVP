@@ -1,0 +1,28 @@
+GET http://localhost:3000/rsvp/1
+
+###
+GET http://localhost:3000/rsvp
+
+###
+POST http://localhost:3000/rsvp
+Content-Type: application/json
+{
+    "nombre": "David",
+    "asistencia": true,
+    "nroInvitados": 2,
+    "comentario": "Nada para decir"
+}
+
+###
+DELETE http://localhost:3000/rsvp/6337b96ca80d4a2f862fa020
+
+###
+PUT http://localhost:3000/rsvp/6337b96ca80d4a2f862fa020
+Content-Type: application/json
+
+{
+    "nombre": "Emiliano2",
+    "asistencia": false,
+        "nroInvitados": 2,
+    "comentario": "Nada para decir"
+}
